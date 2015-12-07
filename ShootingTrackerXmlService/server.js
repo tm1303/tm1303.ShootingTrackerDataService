@@ -66,7 +66,7 @@ function handleRequest(request, response){
 var server = http.createServer(handleRequest);
 
 //Lets start our server
-server.listen(PORT, function(){   
+server.listen(PORT, "127.0.0.1", function(){   
 	console.log("Server listening on port: %s", PORT);
 	console.log("Server listening ip: %s", server.address().address);
 });	
