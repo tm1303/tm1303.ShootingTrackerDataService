@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/tm1303/tm1303.ShootingTrackerDataService/issues"
   },
-  "homepage": "https://github.com/tm1303/tm1303.ShootingTrackerDataService"
+  "homepage": "https://github.com/tm1303/tm1303.ShootingTrackerDataService",
+  "scripts": {
+    "start": "node app/server.js"
+	}
 }
