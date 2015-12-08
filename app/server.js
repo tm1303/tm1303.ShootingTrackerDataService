@@ -7,7 +7,7 @@ var dom = require('xmldom').DOMParser
 
 var Converter = require("csvtojson").Converter;
 
-const PORT=8090; 
+const PORT=5000; 
 
 var year2013 = "http://shootingtracker.com/tracker/2013MASTER.csv";
 var year2014 = "http://shootingtracker.com/tracker/2014MASTER.csv";
@@ -66,9 +66,9 @@ function handleRequest(request, response){
 var server = http.createServer(handleRequest);
 
 //Lets start our server
-server.listen(PORT, "127.0.0.1", function(){   
+server.listen(PORT, function(){   
 	console.log("Server listening on port: %s", PORT);
-	console.log("Server listening ip: %s", server.address().address);
+	//console.log("Server listening ip: %s", server.address().address);
 });	
 
 
